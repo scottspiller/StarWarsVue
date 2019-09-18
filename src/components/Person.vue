@@ -1,10 +1,9 @@
 <template>
-  <div class="hello">
     <div class="card">
-      <div class="card-divider text-center">
+      <div class="card-header">
         {{person.name}}
       </div>
-      <div class="card-section">
+      <div class="card-details">
         <p>
           <em>gender:</em> {{person.gender}}
         </p>
@@ -22,7 +21,6 @@
         </p>
       </div>
     </div>
-  </div>
 </template>
 
 <script lang="ts">
@@ -50,18 +48,10 @@ export default Vue.extend({
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  .card {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    margin: 10px;
+  }
 </style>
