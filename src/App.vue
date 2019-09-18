@@ -1,29 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+     <tabs>
+      <tab title="People">
+        <People/>
+      </tab>
+      <tab title="Films">
+        Placeholder Films
+      </tab>
+      <tab title="Planets">
+        Placeholder Planets
+      </tab>
+    </tabs>
+    
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import People from './components/People.vue';
+import {Tabs, Tab} from 'vue-slim-tabs';
 
 export default Vue.extend({
   name: 'app',
   components: {
-    HelloWorld,
+    People,
+    Tabs,
+    Tab
   },
 });
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style src="vue-slim-tabs/themes/default.css"></style>
