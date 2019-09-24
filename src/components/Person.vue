@@ -32,16 +32,6 @@ export default Vue.extend({
   name: 'Person',
   props: {
     person: Person,
-  },
-    data() {
-      return {
-      }
-  },
-  mounted() {
-
-  },
-  methods:{
-
   }
 });
 </script>
@@ -53,5 +43,6 @@ export default Vue.extend({
     border: 2px solid #73AD21;
     padding: 20px;
     margin: 10px;
+    cursor: pointer;
   }
 </style>

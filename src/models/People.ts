@@ -4,14 +4,14 @@ export class People {
     public count: number = 0;
     public next: string = '';
     public previous: string = '';
-    public results: Person[] = [];
+    public persons: Person[] = [];
 
     constructor(obj: any = null) {
         if (obj) {
             this.count = obj.count || 0;
             this.next = obj.next || '';
             this.previous = obj.previous || '';
-            this.results = (obj.results || []).map((x: any) => new Person(x));
+            this.persons = (obj.results || []).map((x: any) => new Person(x));
         }
     }
 }
